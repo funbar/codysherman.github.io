@@ -1,6 +1,7 @@
 /* Don't forget to vendor prefix */
 
 *:not(.letsGo-animate) {
+    -webkit-transition: width 0.4s, height 0.4s, font-size 0.4s, font-weight 0.4s;
     transition: width 0.4s, height 0.4s, font-size 0.4s, font-weight 0.4s;
 }
 
@@ -93,11 +94,15 @@ a.card-card, a.card-card:hover, a.card-card:focus, a.card-card:active, a.card-ca
     max-width: 150px;
     max-height: 55px;
     fill: #fff;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .card-card:hover .card-logo svg {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 #card-frow.card-card {
