@@ -1,0 +1,81 @@
+/*Frow*/
+.background-frow {
+    background-color: #2A6A9A;
+}
+
+.background-frow-add {
+    transition: background-color 0.4s;
+}
+
+.background-frow-add-active {
+    background-color: #2A6A9A;
+}
+
+.background-frow-remove {
+    transition: background-color 0.4s;
+}
+
+.background-frow-remove-active {
+    background-color: #F6F6F6;
+}
+
+.background-frow #card-frow .card-logo {
+    background-color: #fff;
+}
+
+.background-frow #card-frow .card-logo svg {
+    fill: #2A6A9A;
+}
+
+.background-frow-add #card-frow .card-logo {
+    transition: background-color 0.4s;
+}
+
+.background-frow-add #card-frow .card-logo svg {
+    transition: fill 2s;
+}
+
+.background-frow-add-active #card-frow .card-logo {
+    background-color: #fff;
+}
+
+.background-frow-add-active #card-frow svg {
+    fill: #2A6A9A;
+}
+
+/*letsGo*/
+.background-letsgo {
+    background-color: #09DC6E;
+}
+
+.background-letsgo-add {
+    transition: background-color 0.4s;
+}
+
+.background-letsgo-add-active {
+    background-color: #09DC6E;
+}
+
+.background-letsgo #card-letsgo .card-logo {
+    background-color: #fff;
+}
+
+.background-letsgo #card-letsgo .card-logo svg {
+    fill: #09DC6E;
+}
+
+.background-letsgo-add #card-letsgo .card-logo {
+    transition: background-color 0.4s;
+}
+
+.background-letsgo-add #card-letsgo .card-logo svg {
+    transition: fill 2s;
+}
+
+.background-letsgo-add-active #card-letsgo .card-logo {
+    background-color: #fff;
+}
+
+.background-letsgo-add-active #card-letsgo svg {
+    fill: #09DC6E;
+}
