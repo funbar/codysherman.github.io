@@ -1,6 +1,6 @@
 /*!
  * letsGo
- * http://useletsGo.com/
+ * http://useletsgo.com/
  *
  * By: Cody Sherman <cody@beg.in> (codysherman.com)
  */
@@ -233,6 +233,9 @@ var letsGo = function(target, command, attribute, queue) {
                                     attribute = attribute.substring(1);
                                 } else if (attribute && attribute.charAt(0) === '#') {
                                     attribute = 'id=' + attribute.substring(1);
+                                } else if (!attribute) {
+                                    attributeIsClass = true;
+                                    attribute = 'letsGo-hide';
                                 }
                                 for (var i = 0; i < element.length; i++) {
                                     var styles = window.getComputedStyle(element[i], null);
@@ -298,7 +301,6 @@ var letsGo = function(target, command, attribute, queue) {
             }
         }
     } else {
-        console.log(attribute);
         router(target, command, attribute);
     }
 };

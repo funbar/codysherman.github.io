@@ -12,12 +12,12 @@ html, body, h1, h2, h3, h4, h5, h6 {
 
 html, body {
     height: 100%;
+    background-color: #f8f8f8;
 }
 
 body {
     font-family: 'Roboto';
     padding-bottom: 30px;
-    /*background-color: #F6F6F6;*/
 }
 
 h1 {
@@ -32,6 +32,12 @@ h2 {
     margin-bottom: 30px;
     /*text-align: center;*/
     font-style: italic;
+}
+
+p#about {
+    margin-top: 15px;
+    font-size: 18px;
+    /*max-width: 458px;*/
 }
 
 p {
@@ -61,11 +67,16 @@ p {
 .card-card {
     display: block;
     min-height: 270px;
-    color: #fff;
+    background-color: #fff;
     font-weight: 300;
     margin-bottom: 20px;
     position: relative;
-    /*background-color: #fff;*/
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+.card-card:hover {
+    box-shadow: 0 1px 7px 0 #a0a0a0
 }
 
 .beta {
@@ -81,62 +92,58 @@ p {
 
 a.card-card, a.card-card:hover, a.card-card:focus, a.card-card:active, a.card-card:visited {
     text-decoration: none;
-    color: #fff;
+    color: #333;
 }
 
+
+
 .card-logo {
-    height: 110px;
+    height: 90px;
 }
 
 .card-logo svg {
     width: 100%;
     height: 100%;
     max-width: 150px;
-    max-height: 55px;
+    max-height: 45px;
     fill: #fff;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.card-card:hover .card-logo svg {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-}
 
-#card-frow.card-card {
+
+#card-frow .card-logo {
     background-color: #2A6A9A;
 }
 
-#card-letsgo.card-card {
-    background-color: #09DC6E;
+#card-letsgo .card-logo {
+    background-color: #4EF1C5;
 }
 
-#card-internrocket.card-card {
+#card-internrocket .card-logo {
     background-color: #F44336;
 }
 
-#card-begin.card-card {
+#card-begin .card-logo {
     background-color: #12D8B7;
 }
 
-#card-qikpix.card-card {
+#card-qikpix .card-logo {
     background-color: #00c6e0;
 }
 
 .card-info {
-    padding: 15px;
+    padding: 25px 15px 15px;
 }
 
 .card-title {
     font-size: 23px;
     /*text-align: center;*/
-    font-weight: 300;
+    font-weight: 400;
     margin: 10px 0;
 }
 
 .card-position {
-    margin-top: 10px;
-    font-weight: 700;
+    margin-top: 17px;
+    font-weight: 400;
+    /*font-style: italic;*/
 }
