@@ -1,10 +1,3 @@
-/*!
- * letsGo
- * http://useletsgo.com/
- *
- * By: Cody Sherman <cody@beg.in> (codysherman.com)
- */
-
 'use strict';
 
 var letsGoRunning = false;
@@ -84,9 +77,6 @@ var letsGo = function(target, command, attribute, queue) {
                 }
             }, 0);
         } else {
-            // var setTheAttribute = function() {
-            //     element.setAttribute(attribute[0], attribute[1]);
-            // }
             if (add) {
                 if (attribute.indexOf('=') > -1) {
                      attribute = attribute.split('=');
@@ -267,18 +257,6 @@ var letsGo = function(target, command, attribute, queue) {
     };
 
     var queueControl = function(target, command, attribute) {
-        // if (!claimedTicket) {
-        //     claimedTicket = ++letsGoTicketsOut;
-        // }
-        // if (letsGoRunning && letsGoTicketsDone !== claimedTicket) {
-        //     setTimeout(function () {
-        //         queueControl(target, command, attribute, claimedTicket);
-        //     }, 0);
-        // } else {
-        //     console.log('Doing', claimedTicket, target);
-        //     letsGoRunning = true;
-        //     router(target, command, attribute);
-        // }
         setTimeout(function () {
             letsGoQueue.push([target, command, attribute]);
             if (!letsGoRunning) {
